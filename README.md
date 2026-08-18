@@ -10,40 +10,40 @@
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### 1. ⚡ Real-Time High-Throughput Live Stream Engine
+### 1. Real-Time High-Throughput Live Stream Engine
 - Simulates real-time transaction ingestion across Indian PSPs with realistic banking entities and handles.
 - **Sub-15ms ML Latency Tracking**: Real-time inference latency telemetry (average ~11.4 ms) suitable for NPCI switch scale (>10,000 TPS).
 - Live decision flags: `APPROVED_SAFE`, `STEP_UP_CHALLENGE` (FIDO2 Biometrics), `CRITICAL_BLOCKED`.
 - Built-in procedural Web Audio synthesizer providing tactile sound cues for safe transfers and threat alerts.
 - **Attack Burst Injection**: On-demand simulation of synthetic fraud spikes.
 
-### 2. 🧪 Interactive AI Risk Assessment Sandbox & Explainable AI (SHAP)
+### 2. Interactive AI Risk Assessment Sandbox & Explainable AI (SHAP)
 - Custom test sandbox with real-time sliders for **Amount (₹)**, **Velocity (txns/15m)**, **Geodesic Distance Jump (km)**, **Device Trust Score (0-100%)**, **Rooted/Frida Hooking**, and **Merchant Category Code (MCC)** risk.
 - **SHAP Waterfall Attribution**: Transparent feature-level impact weights explaining exactly *why* the AI flagged or cleared each transaction.
 - Instant preset test fixtures for routine purchases, impossible travel anomalies, and Jamtara cyber phishing attacks.
 
-### 3. 🕸️ Interactive Money Mule & Smurfing Network Visualizer
+### 3. Interactive Money Mule & Smurfing Network Visualizer
 - Dynamic HTML5 Canvas node-link visualizer rendering money laundering topologies:
   $$\text{Victims} \longrightarrow \text{Scam Aggregator VPA} \longrightarrow \text{Layer-1 Mules} \longrightarrow \text{Crypto P2P / Micro-ATM Off-ramps}$$
 - Interactive physics (drag, drop, hover) with node telemetry inspector and one-click **"Quarantine VPA"** intervention.
 
-### 4. 🕵️ UPI QR Deep-Link & SMS Phishing Inspector
+### 4. UPI QR Deep-Link & SMS Phishing Inspector
 - **UPI QR URI Parser**: Decodes `upi://pay?...` deep links to catch mismatched payee impersonation (e.g. personal handle claiming to be Electricity Discom), ₹1-₹5 micro-amount probes, and suspicious notes.
 - **NLP SMS Scam Classifier**: Scans text messages for high-urgency keywords, fake power cutoff threats, AnyDesk/TeamViewer RAT downloads, and bank KYC expiry lures.
 
-### 5. 🎮 Interactive Scam Attack Scenario Simulator
+### 5. Interactive Scam Attack Scenario Simulator
 - Step-by-step interactive walkthroughs demonstrating how real-world UPI scams unfold and how UPI Shield Pro intercepts each stage:
   1. *OLX Marketplace QR Code Swap Scam*
   2. *Midnight Electricity Disconnection Panic Scam*
   3. *Remote Desktop Screen-Sharing (AnyDesk RAT) Keystroke Theft*
 
-### 6. 📊 Threat Telemetry & Indian Cybercrime Hotspots Index
+### 6. Threat Telemetry & Indian Cybercrime Hotspots Index
 - Visual canvas charts: Hourly traffic volume vs. blocked attack rates, and fraud vector distribution donut chart.
 - Regional Cybercrime Watchlist table tracking hotspot districts (*Mewat, Jamtara, Alwar, Deoghar, Delhi-NCR*).
 
-### 7. 🎓 Capstone Presentation & Academic Documentation Mode
+### 7. Capstone Presentation & Academic Documentation Mode
 - End-to-end distributed ML pipeline breakdown:
   $$\text{Apache Kafka Ingestion} \longrightarrow \text{Redis / Feast Feature Store} \longrightarrow \text{XGBoost + Bi-LSTM Inference} \longrightarrow \text{TreeSHAP Engine} \longrightarrow \text{Automated Webhooks}$$
 - Machine Learning Benchmark Evaluation Matrix comparing Baseline Heuristics, Random Forest, XGBoost, and the proposed Deep Ensemble.
@@ -51,7 +51,7 @@
 
 ---
 
-## 🏗️ Architecture Pipeline
+## Architecture Pipeline
 
 ```
 [ UPI Mobile Apps / PSPs (GPay, PhonePe, Paytm, CRED, BHIM) ]
@@ -78,7 +78,7 @@
 
 ---
 
-## 📊 Machine Learning Model Benchmarks
+## Machine Learning Model Benchmarks
 
 | Model Architecture | ROC-AUC | Precision | Recall | Latency | Explainability (XAI) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -89,7 +89,7 @@
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 upi-shield-pro/
@@ -113,7 +113,7 @@ upi-shield-pro/
 
 ---
 
-## 🚀 Quick Start / Local Setup
+## Quick Start / Local Setup
 
 **Zero Dependencies Required**: Built using standard HTML5, CSS3, and modern Vanilla ES6+ JavaScript.
 
@@ -133,7 +133,7 @@ upi-shield-pro/
 
 ---
 
-## 🌐 Instant Free Deployment Options
+## Instant Free Deployment Options
 
 ### Deploy with GitHub Pages:
 1. Push this repository to GitHub.
@@ -148,5 +148,5 @@ upi-shield-pro/
 
 ---
 
-## 📜 License
+## License
 This project is open source and available under the [MIT License](LICENSE).
