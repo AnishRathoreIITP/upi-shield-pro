@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPI Shield Pro — AI Fraud Detection & Cyber Threat Intelligence</title>
+  <meta name="description" content="Next-Generation Real-Time AI Fraud Detection and Cyber Defense Platform for Unified Payments Interface (UPI) Transactions.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand-header">
+        <div class="brand-logo-icon">🛡️</div>
+        <div>
+          <div class="brand-title">
+            UPI SHIELD <span class="brand-badge">PRO v4.2</span>
+          </div>
+          <span style="font-size:0.72rem; color:var(--text-muted);">AI Fintech Threat Defense</span>
+        </div>
+      </div>
+
+      <div class="nav-section-title">Core Operations</div>
+      <ul class="nav-menu">
+        <li>
+          <a class="nav-item active" data-tab="stream">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            <span>Live Stream Engine</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" data-tab="lab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            <span>AI Risk Lab & SHAP</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" data-tab="network">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+            <span>Mule Network Graph</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" data-tab="inspector">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            <span>QR & SMS Inspector</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-section-title">Intelligence & Defense</div>
+      <ul class="nav-menu">
+        <li>
+          <a class="nav-item" data-tab="scenarios">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Attack Simulator</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" data-tab="analytics">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            <span>Threat Hotspots</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" data-tab="capstone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            <span>Capstone Architecture</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-model-tag">
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <span class="live-pulse-dot"></span>
+            <span>XGBoost + LSTM</span>
+          </div>
+          <span class="mono" style="color:var(--accent-cyan);">99.1% Acc</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Workspace -->
+    <main class="main-content">
+      <!-- Top Sticky Navbar -->
+      <header class="top-navbar">
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <div class="system-status-indicator">
+            <span class="live-pulse-dot"></span>
+            <span>NPCI Switch Active</span>
+            <span style="color:var(--border-glass);">|</span>
+            <span style="color:var(--text-muted); font-size:0.75rem;">Latency: <strong style="color:var(--accent-emerald);">11.4 ms</strong></span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button class="btn btn-secondary" id="soundToggleBtn" title="Toggle Synthesizer Sound FX">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <span>Audio On</span>
+          </button>
+          <button class="btn btn-danger" id="injectFraudBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <span>Inject Attack Burst</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Dynamic Content Tabs -->
+      <div class="content-body">
+        
+        <!-- ================= TAB 1: LIVE STREAM MONITOR ================= -->
+        <section id="tab-stream" class="tab-view animate-slide-up">
+          <!-- Metric Stat Cards -->
+          <div class="stat-grid">
+            <div class="stat-card">
+              <div class="stat-top">
+                <span class="stat-label">Total Transactions Monitored</span>
+                <div class="stat-icon">⚡</div>
+              </div>
+              <div class="stat-value mono" id="statTotalMonitored">14,892</div>
+              <div class="stat-footer">
+                <span class="stat-delta positive">↑ 100%</span>
+                <span>Across all Indian PSPs</span>
+              </div>
+            </div>
+
+            <div class="stat-card stat-danger">
+              <div class="stat-top">
+                <span class="stat-label">Fraud Attacks Intercepted</span>
+                <div class="stat-icon" style="color:var(--accent-crimson);">🚫</div>
+              </div>
+              <div class="stat-value mono" id="statFraudBlocked" style="color:var(--accent-crimson);">142</div>
+              <div class="stat-footer">
+                <span class="stat-delta negative">Instant Intercept</span>
+                <span>Sub-15ms automated block</span>
+              </div>
+            </div>
+
+            <div class="stat-card stat-warning">
+              <div class="stat-top">
+                <span class="stat-label">Step-Up Auth Challenges</span>
+                <div class="stat-icon" style="color:var(--accent-amber);">🔐</div>
+              </div>
+              <div class="stat-value mono" id="statChallenges" style="color:var(--accent-amber);">418</div>
+              <div class="stat-footer">
+                <span>FIDO2 / Biometric 2FA Required</span>
+              </div>
+            </div>
+
+            <div class="stat-card stat-success">
+              <div class="stat-top">
+                <span class="stat-label">Fraud Amount Saved</span>
+                <div class="stat-icon" style="color:var(--accent-emerald);">🛡️</div>
+              </div>
+              <div class="stat-value mono" id="statAmountSaved" style="color:var(--accent-emerald);">₹38,45,900</div>
+              <div class="stat-footer">
+                <span class="stat-delta positive">100% Protected</span>
+                <span>Zero victim capital loss</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Table Section -->
+          <div class="glass-panel">
+            <div class="panel-header">
+              <div>
+                <h3 class="panel-title">
+                  <span class="live-pulse-dot"></span>
+                  Real-Time High-Throughput UPI Stream
+                </h3>
+                <span class="panel-subtitle">Streaming live payment events evaluated through dual XGBoost + LSTM pipeline</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <div style="display:flex; gap:0.25rem;">
+                  <button class="btn btn-primary table-filter-btn" data-filter="all" style="padding:0.35rem 0.75rem; font-size:0.75rem;">All</button>
+                  <button class="btn btn-secondary table-filter-btn" data-filter="blocked" style="padding:0.35rem 0.75rem; font-size:0.75rem;">Blocked</button>
+                  <button class="btn btn-secondary table-filter-btn" data-filter="warning" style="padding:0.35rem 0.75rem; font-size:0.75rem;">Challenges</button>
+                  <button class="btn btn-secondary table-filter-btn" data-filter="safe" style="padding:0.35rem 0.75rem; font-size:0.75rem;">Safe</button>
+                </div>
+                <button class="btn btn-secondary" id="pausePlayBtn" style="padding:0.35rem 0.75rem; font-size:0.75rem;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="14" height="14"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> Pause
+                </button>
+                <select class="form-select" id="simSpeedSelect" style="padding:0.3rem 0.6rem; font-size:0.75rem;">
+                  <option value="1800">Normal Speed (1.8s)</option>
+                  <option value="800">Turbo Speed (0.8s)</option>
+                  <option value="3500">Relaxed Speed (3.5s)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="table-container">
+              <table class="cyber-table">
+                <thead>
+                  <tr>
+                    <th>Timestamp</th>
+                    <th>Sender VPA & Location</th>
+                    <th>Receiver VPA / Merchant</th>
+                    <th>Amount</th>
+                    <th>App Channel</th>
+                    <th>Threat Index</th>
+                    <th>Decision</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="liveStreamTableBody">
+                  <!-- Injected dynamically via simulation.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB 2: AI RISK ASSESSMENT LAB ================= -->
+        <section id="tab-lab" class="tab-view" style="display:none;">
+          <div style="margin-bottom:1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem;">
+            <div>
+              <h2 style="font-size:1.4rem;">🧪 Interactive AI Risk Assessment Sandbox</h2>
+              <p style="color:var(--text-secondary); font-size:0.85rem;">Test custom transactions and inspect transparent Explainable AI (SHAP) feature weight attribution.</p>
+            </div>
+            <div style="display:flex; gap:0.5rem;">
+              <button class="btn btn-secondary" id="presetSafeBtn" style="font-size:0.78rem;">🥗 Normal Grocery</button>
+              <button class="btn btn-secondary" id="presetGeoJumpBtn" style="font-size:0.78rem;">✈️ Geo-Jump Anomaly</button>
+              <button class="btn btn-danger" id="presetJamtaraBtn" style="font-size:0.78rem;">🚨 Jamtara Phishing Attack</button>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <!-- Form Inputs -->
+            <div class="glass-panel">
+              <form id="aiAssessmentForm" onsubmit="return false;">
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label class="form-label">Transaction Amount (₹) <span class="help-hint">Ticket Value</span></label>
+                    <input type="number" id="inputAmount" class="form-input mono" value="85000" min="1" max="500000">
+                    <input type="range" id="inputAmountRange" class="form-range" min="50" max="100000" step="500" value="85000">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Sender UPI ID <span class="help-hint">Origin VPA</span></label>
+                    <input type="text" id="inputSenderVpa" class="form-input mono" value="deepak.mehra@okicici">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Beneficiary UPI ID <span class="help-hint">Recipient VPA</span></label>
+                    <input type="text" id="inputReceiverVpa" class="form-input mono" value="helpdesk.power.auth@airtel">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Velocity Window <span id="velocityDisplayValue" class="mono" style="color:var(--accent-cyan);">7 txns/15m</span></label>
+                    <input type="range" id="inputVelocityRange" class="form-range" min="1" max="12" step="1" value="7">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Geo-Velocity Jump <span id="geoDisplayValue" class="mono" style="color:var(--accent-amber);">1150 km</span></label>
+                    <input type="range" id="inputGeoRange" class="form-range" min="0" max="2000" step="50" value="1150">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Device Trust Score <span id="deviceTrustDisplayValue" class="mono" style="color:var(--accent-crimson);">18%</span></label>
+                    <input type="range" id="inputDeviceTrust" class="form-range" min="5" max="100" step="5" value="18">
+                  </div>
+                </div>
+
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem; padding:1rem; background:var(--bg-input); border-radius:var(--radius-sm); border:1px solid var(--border-subtle); margin-bottom:1rem;">
+                  <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; cursor:pointer;">
+                    <input type="checkbox" id="inputNewBeneficiary" checked>
+                    <span>New / First-Time Beneficiary</span>
+                  </label>
+                  <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; cursor:pointer;">
+                    <input type="checkbox" id="inputLateNight" checked>
+                    <span>Late Night Window (01:00-05:00 AM)</span>
+                  </label>
+                  <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; cursor:pointer;">
+                    <input type="checkbox" id="inputRooted" checked>
+                    <span>Rooted / Frida Hooked OS</span>
+                  </label>
+                  <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; cursor:pointer;">
+                    <input type="checkbox" id="inputQrScanned" checked>
+                    <span>Scanned via External QR Code</span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Merchant Category Code (MCC) Risk Profile</label>
+                  <select id="inputMccRisk" class="form-select">
+                    <option value="low">Standard Grocery / Retail / Utilities (Low Risk)</option>
+                    <option value="high" selected>Unverified Support / Rapid Remittance (High Risk)</option>
+                    <option value="crypto_gaming">Offshore P2P Crypto / Unregulated Gaming (Critical Risk)</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+
+            <!-- Real-time Score Gauge & SHAP Waterfall -->
+            <div class="glass-panel" style="display:flex; flex-direction:column; gap:1.25rem;">
+              <div class="score-gauge-box">
+                <div class="score-circle">
+                  <svg>
+                    <circle class="bg-ring" cx="70" cy="70" r="58"></circle>
+                    <circle class="progress-ring" id="labProgressRing" cx="70" cy="70" r="58" stroke-dasharray="364.4" stroke-dashoffset="50"></circle>
+                  </svg>
+                  <div class="score-center-text">
+                    <span class="score-num mono" id="labScoreNum">94%</span>
+                    <span class="score-unit">THREAT INDEX</span>
+                  </div>
+                </div>
+                <span class="badge badge-critical" id="labDecisionBadge" style="margin-bottom:0.4rem;">CRITICAL BLOCKED</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Inference Latency: <strong id="labLatencyText" style="color:var(--accent-emerald);">8.6 ms</strong></span>
+              </div>
+
+              <div style="background:var(--bg-input); padding:0.85rem; border-radius:var(--radius-sm); border:1px solid var(--border-subtle);">
+                <strong style="font-size:0.75rem; color:var(--accent-cyan); text-transform:uppercase;">Mitigation Protocol:</strong>
+                <p id="labActionRecommendation" style="font-size:0.82rem; color:var(--text-primary); margin-top:0.25rem; line-height:1.4;">
+                  Instant NPCI Intercept: Block transaction, freeze receiver routing temporarily.
+                </p>
+              </div>
+
+              <div>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <h4 style="font-size:0.88rem; color:var(--text-primary);">SHAP Factor Attribution</h4>
+                  <span style="font-size:0.72rem; color:var(--text-muted);">Explainable AI (XAI)</span>
+                </div>
+                <div class="shap-container" id="shapWaterfallContainer">
+                  <!-- Injected dynamically via ml-engine.js -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB 3: MULE NETWORK GRAPH ================= -->
+        <section id="tab-network" class="tab-view" style="display:none;">
+          <div style="margin-bottom:1.25rem; display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <h2 style="font-size:1.4rem;">🕸️ Money Mule & Smurfing Network Visualizer</h2>
+              <p style="color:var(--text-secondary); font-size:0.85rem;">Trace rapid fund dispersal, multi-hop laundering chains, and freeze connected syndicate accounts in real-time.</p>
+            </div>
+            <button class="btn btn-secondary" onclick="window.initNetworkGraph()">
+              Reset Graph Physics
+            </button>
+          </div>
+
+          <div class="graph-viewport">
+            <canvas id="muleNetworkCanvas"></canvas>
+            <div class="graph-legend">
+              <div class="legend-row"><span class="legend-dot" style="background:#3b82f6;"></span><span>Victim Accounts</span></div>
+              <div class="legend-row"><span class="legend-dot" style="background:#ff3366;"></span><span>Primary Scam Aggregator VPA</span></div>
+              <div class="legend-row"><span class="legend-dot" style="background:#f59e0b;"></span><span>Layer-1 Mule Dispersion</span></div>
+              <div class="legend-row"><span class="legend-dot" style="background:#8b5cf6;"></span><span>Crypto P2P / Micro-ATM Cashout</span></div>
+            </div>
+          </div>
+
+          <div class="glass-panel" id="network-node-details" style="margin-top:1.25rem;">
+            <p style="color:var(--text-muted); font-size:0.85rem; font-style:italic;">
+              Click on any node in the graph above to inspect laundering telemetry, fund velocity, and quarantine accounts.
+            </p>
+          </div>
+        </section>
+
+        <!-- ================= TAB 4: QR & SMS SCAM INSPECTOR ================= -->
+        <section id="tab-inspector" class="tab-view" style="display:none;">
+          <div style="margin-bottom:1.5rem;">
+            <h2 style="font-size:1.4rem;">🕵️ UPI QR Deep-Link & SMS Phishing Inspector</h2>
+            <p style="color:var(--text-secondary); font-size:0.85rem;">Detect malicious parameter tampering, deceptive merchant spoofing, and NLP social engineering payloads.</p>
+          </div>
+
+          <div class="dashboard-grid">
+            <!-- QR Inspector Box -->
+            <div class="glass-panel">
+              <h3 style="font-size:1.05rem; margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                <span>📷</span> UPI URI / QR Payload Scanner
+              </h3>
+              <p style="color:var(--text-muted); font-size:0.8rem; margin-bottom:1rem;">Paste raw `upi://pay` URI string or test with sample payloads below.</p>
+              
+              <div class="form-group" style="margin-bottom:1rem;">
+                <textarea id="qrStringInput" class="form-input mono" rows="3" placeholder="upi://pay?pa=...&pn=...&am=...&cu=INR">upi://pay?pa=rajesh.kumar982@ybl&pn=Bescom_Electricity_Official_Bill&am=5&cu=INR&tn=Refund_Bill_Sync</textarea>
+              </div>
+
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.25rem;">
+                <div style="display:flex; gap:0.5rem;">
+                  <button class="btn btn-secondary" id="sampleLegitQrBtn" style="font-size:0.75rem; padding:0.3rem 0.6rem;">Legitimate Swiggy QR</button>
+                  <button class="btn btn-secondary" id="sampleScamQrBtn" style="font-size:0.75rem; padding:0.3rem 0.6rem;">Spoofed Bescom QR</button>
+                </div>
+                <button class="btn btn-primary" id="inspectQrBtn">
+                  Inspect QR Payload
+                </button>
+              </div>
+
+              <div id="qrInspectionResult"></div>
+            </div>
+
+            <!-- SMS Phishing Box -->
+            <div class="glass-panel">
+              <h3 style="font-size:1.05rem; margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                <span>💬</span> SMS & Social Engineering NLP Classifier
+              </h3>
+              <p style="color:var(--text-muted); font-size:0.8rem; margin-bottom:1rem;">Analyze suspicious SMS messages threatening disconnection or requesting remote desktop downloads.</p>
+
+              <div class="form-group" style="margin-bottom:1rem;">
+                <textarea id="smsTextInput" class="form-input" rows="3" placeholder="Paste SMS message here...">Dear Customer, Your electricity power will be disconnected tonight at 10:30 PM from the electric office because your previous month bill was not updated. Please immediately contact our power officer at 9811223344. BESCOM Discom.</textarea>
+              </div>
+
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.25rem;">
+                <div style="display:flex; gap:0.4rem;">
+                  <button class="btn btn-secondary" id="sampleSmsElec" style="font-size:0.75rem; padding:0.3rem 0.6rem;">Electricity Cut</button>
+                  <button class="btn btn-secondary" id="sampleSmsAnydesk" style="font-size:0.75rem; padding:0.3rem 0.6rem;">AnyDesk RAT</button>
+                  <button class="btn btn-secondary" id="sampleSmsKyc" style="font-size:0.75rem; padding:0.3rem 0.6rem;">SBI KYC Block</button>
+                </div>
+                <button class="btn btn-primary" id="inspectSmsBtn">
+                  Classify SMS
+                </button>
+              </div>
+
+              <div id="smsInspectionResult"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB 5: SCAM SCENARIOS SIMULATOR ================= -->
+        <section id="tab-scenarios" class="tab-view" style="display:none;">
+          <div id="scam-simulator-view">
+            <!-- Rendered dynamically by scam-simulator.js -->
+          </div>
+        </section>
+
+        <!-- ================= TAB 6: ANALYTICS & HOTSPOTS ================= -->
+        <section id="tab-analytics" class="tab-view" style="display:none;">
+          <div style="margin-bottom:1.5rem;">
+            <h2 style="font-size:1.4rem;">📊 Threat Telemetry & Indian Geo-Hotspots</h2>
+            <p style="color:var(--text-secondary); font-size:0.85rem;">Temporal trend analysis, vector distribution, and regional cybercrime hotspot indexing.</p>
+          </div>
+
+          <div class="dashboard-grid" style="margin-bottom:1.5rem;">
+            <div class="glass-panel">
+              <div class="panel-header">
+                <h3 class="panel-title">Hourly Traffic & Intercepted Attacks</h3>
+                <span class="panel-subtitle">Cyan: Total Volume | Crimson: Blocked Threats</span>
+              </div>
+              <canvas id="hourlyTrafficChart" style="width:100%; height:240px;"></canvas>
+            </div>
+
+            <div class="glass-panel">
+              <div class="panel-header">
+                <h3 class="panel-title">Attack Vector Distribution</h3>
+                <span class="panel-subtitle">Primary Fraud Typologies</span>
+              </div>
+              <canvas id="vectorDonutChart" style="width:100%; height:240px;"></canvas>
+            </div>
+          </div>
+
+          <div class="glass-panel">
+            <div class="panel-header">
+              <h3 class="panel-title">📍 Indian Regional Cybercrime Hotspot Watchlist</h3>
+              <span class="panel-subtitle">Real-time threat clustering mapped across cyber policing districts</span>
+            </div>
+            <div class="table-container">
+              <table class="cyber-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Hotspot District / Region</th>
+                    <th>Threat Index</th>
+                    <th>Predominant Fraud Vector</th>
+                    <th>Active Intercepts</th>
+                  </tr>
+                </thead>
+                <tbody id="hotspotsTableBody">
+                  <!-- Injected dynamically via analytics.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB 7: CAPSTONE ARCHITECTURE ================= -->
+        <section id="tab-capstone" class="tab-view" style="display:none;">
+          <div id="capstone-architecture-view">
+            <!-- Rendered dynamically by capstone-docs.js -->
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Incident Dossier Modal -->
+  <div class="modal-backdrop" id="incidentModal">
+    <div class="modal-card" id="incidentModalContent"></div>
+  </div>
+
+  <!-- Cyber Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/ml-engine.js"></script>
+  <script src="js/simulation.js"></script>
+  <script src="js/network-graph.js"></script>
+  <script src="js/scam-inspector.js"></script>
+  <script src="js/scam-simulator.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/capstone-docs.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
