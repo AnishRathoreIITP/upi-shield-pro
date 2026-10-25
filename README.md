@@ -131,22 +131,6 @@ upi-shield-pro/
      ```
    - Open **`http://localhost:3000`** in your browser.
 
----
-
-## Instant Free Deployment Options
-
-### Deploy with GitHub Pages:
-1. Push this repository to GitHub.
-2. Go to **Settings** $\rightarrow$ **Pages**.
-3. Under **Branch**, select `main` and root `/`, then click **Save**.
-4. Your website will be live at `https://YOUR_USERNAME.github.io/upi-shield-pro/` in 1 minute!
-
-### Deploy with Netlify:
-1. Visit **[Netlify Drop](https://app.netlify.com/drop)**.
-2. Drag and drop the `upi-shield-pro` folder.
-3. Your live link will be generated instantly.
-
----
 
 ## License
 This project is open source and available under the [MIT License](LICENSE).
